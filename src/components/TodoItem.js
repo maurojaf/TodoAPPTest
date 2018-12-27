@@ -22,7 +22,7 @@ export default class TodoItem extends Component{
     }
 
     handleChange(evt){
-        this.setState({todo; evt.target.value});
+        this.setState({todo, evt.target.value});
     }
 
     dynamicComponents(){
