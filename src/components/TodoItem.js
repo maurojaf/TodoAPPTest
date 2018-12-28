@@ -1,4 +1,4 @@
-import react, {Component} from 'react';
+import React, {Component} from 'react';
 
 export default class TodoItem extends Component{
 
@@ -22,7 +22,7 @@ export default class TodoItem extends Component{
     }
 
     handleChange(evt){
-        this.setState({todo, evt.target.value});
+        this.setState({todo: evt.target.value});
     }
 
     dynamicComponents(){
@@ -35,7 +35,7 @@ export default class TodoItem extends Component{
                     type="text"
                     className="form-control"
                     value={todo}
-                    onChange={(e) => this.handleChange(v)}
+                    onChange={(e) => this.handleChange(e)}
                 />
             );
 
